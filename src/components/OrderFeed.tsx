@@ -58,7 +58,7 @@ export function OrderFeed({ orders }: { orders: OrderEvent[] }) {
         <h3 className="font-display text-lg">Live Order Stream</h3>
         <p className="text-xs text-muted-foreground mt-0.5">Inbound from Commerce7 → routed to Vinosmith</p>
       </div>
-      <div className="flex-1 overflow-y-auto divide-y max-h-[520px]">
+      <div className="flex-1 overflow-y-auto divide-y">
         {orders.map((o, idx) => {
           const meta = channelMeta[o.type];
           return (

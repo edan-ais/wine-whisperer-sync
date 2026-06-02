@@ -9,9 +9,6 @@ export function FlowDiagram() {
         <Rule color="allocated" trigger="Wine Club Billing" action="Move Warehouse → Allocated Pool" />
         <Rule color="allocated" trigger="Club Ship" action="Deplete from Allocated Pool" />
         <Rule color="tasting" trigger="Club Pickup" action="Deplete Tasting Room + Remove from Allocated" badge="dual" />
-        <div className="rounded-lg border border-dashed p-3 flex items-center justify-center text-muted-foreground italic">
-          + extensible to refunds, transfers, audits
-        </div>
       </div>
     </div>
   );
