@@ -96,11 +96,10 @@ function Index() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <StatCard label="Total Bottles" value={totalBottles.toLocaleString()} hint="Across all pools" />
           <StatCard label="Allocated to Club" value={allocated.toLocaleString()} hint="Awaiting fulfillment" />
           <StatCard label="Events Today" value={eventsProcessed.toLocaleString()} delta="+1.2k" hint="Synced both directions" />
-          <StatCard label="Sync Latency" value="1.4s" delta="-0.3s" hint="C7 → Vinosmith p95" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
