@@ -73,14 +73,7 @@ function Index() {
     <div className="min-h-screen">
       <main className="max-w-[1400px] mx-auto px-6 py-8 space-y-6">
         <div className="flex items-end justify-between gap-4 flex-wrap">
-          <div className="flex items-center gap-4">
-            <Logo />
-            <div className="hidden md:block h-10 w-px bg-border" />
-            <div>
-              <h1 className="font-display text-2xl leading-tight">Inventory Operations</h1>
-              <div className="text-xs text-muted-foreground">Commerce7 → Vinosmith · live sync</div>
-            </div>
-          </div>
+          <h1 className="font-display text-2xl leading-tight">Margerum Wines Inventory Tracker</h1>
           <div className="flex items-center gap-3 flex-wrap">
             
             <button
