@@ -12,7 +12,7 @@ export function DepletionsChart() {
   const delta = ((totalForecast - totalHistory) / totalHistory) * 100;
 
   return (
-    <div className="rounded-xl border bg-card overflow-hidden">
+    <div className="surface overflow-hidden">
       <div className="flex flex-wrap items-start justify-between gap-4 px-5 py-4 border-b">
         <div>
           <h3 className="font-display text-lg">Depletions by SKU · Monthly</h3>

@@ -71,14 +71,21 @@ function Index() {
 
   return (
     <div className="min-h-screen">
-      <header className="border-b bg-card/60 backdrop-blur sticky top-0 z-10">
-        <div className="max-w-[1400px] mx-auto px-6 py-3 flex items-center justify-between gap-4 flex-wrap">
-          <Logo />
-          <div className="flex items-center gap-3">
+      <main className="max-w-[1400px] mx-auto px-6 py-8 space-y-6">
+        <div className="flex items-end justify-between gap-4 flex-wrap">
+          <div className="flex items-center gap-4">
+            <Logo />
+            <div className="hidden md:block h-10 w-px bg-border" />
+            <div>
+              <h1 className="font-display text-2xl leading-tight">Inventory Operations</h1>
+              <div className="text-xs text-muted-foreground">Commerce7 → Vinosmith · live sync</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 flex-wrap">
             <SyncStatus lastSync="just now" eventsProcessed={eventsProcessed} />
             <button
               onClick={fireOne}
-              className="rounded-md bg-primary text-primary-foreground text-sm font-medium px-3.5 py-2 hover:opacity-90 transition"
+              className="rounded-lg bg-primary text-primary-foreground text-sm font-medium px-4 py-2 hover:brightness-110 transition shadow-[0_6px_20px_-6px_color-mix(in_oklab,var(--primary)_70%,transparent)]"
             >
               Simulate Order
             </button>
@@ -88,17 +95,8 @@ function Index() {
             </label>
           </div>
         </div>
-      </header>
 
-      <main className="max-w-[1400px] mx-auto px-6 py-6 space-y-6">
-        <div>
-          <h1 className="font-display text-3xl">Inventory Operations</h1>
-          <p className="text-sm text-muted-foreground mt-1">
-            Every Commerce7 transaction reconciled to Vinosmith in real time — no manual touchpoints.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           <StatCard label="Total Bottles" value={totalBottles.toLocaleString()} hint="Across all pools" />
           <StatCard label="Allocated to Club" value={allocated.toLocaleString()} hint="Awaiting fulfillment" />
           <StatCard label="Events Today" value={eventsProcessed.toLocaleString()} delta="+1.2k" hint="Synced both directions" />
@@ -116,10 +114,6 @@ function Index() {
         </div>
 
         <FlowDiagram />
-
-        <footer className="text-xs text-muted-foreground text-center py-6 border-t">
-          Prototype · Simulated Commerce7 and Vinosmith APIs · Cellarbridge by Edan
-        </footer>
       </main>
     </div>
   );

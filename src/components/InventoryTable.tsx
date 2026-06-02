@@ -9,7 +9,7 @@ interface Props {
 export function InventoryTable({ inventory, pulse }: Props) {
   const skuMap = Object.fromEntries(SKUS.map((s) => [s.id, s]));
   return (
-    <div className="overflow-hidden rounded-xl border bg-card">
+    <div className="overflow-hidden surface">
       <div className="flex items-center justify-between px-5 py-4 border-b">
         <div>
           <h3 className="font-display text-lg">Inventory Pools</h3>

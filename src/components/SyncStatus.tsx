@@ -5,7 +5,7 @@ interface Props {
 
 export function SyncStatus({ lastSync, eventsProcessed }: Props) {
   return (
-    <div className="flex items-center gap-3 rounded-lg border bg-card px-3 py-2">
+    <div className="flex items-center gap-3 surface px-3 py-2">
       <div className="flex items-center gap-2">
         <span className="relative flex h-2 w-2">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--success)] opacity-75" />
