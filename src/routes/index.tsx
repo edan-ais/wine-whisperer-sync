@@ -82,7 +82,7 @@ function Index() {
             </div>
           </div>
           <div className="flex items-center gap-3 flex-wrap">
-            <SyncStatus lastSync="just now" eventsProcessed={eventsProcessed} />
+            
             <button
               onClick={fireOne}
               className="rounded-lg bg-primary text-primary-foreground text-sm font-medium px-4 py-2 hover:brightness-110 transition shadow-[0_6px_20px_-6px_color-mix(in_oklab,var(--primary)_70%,transparent)]"
