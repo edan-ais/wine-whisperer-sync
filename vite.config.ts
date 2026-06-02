@@ -12,8 +12,15 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  // Deploy target: Netlify (nitro netlify preset outputs to .netlify/)
+  // Deploy target: Netlify (nitro netlify preset).
+  // Override output paths so the netlify preset's expected layout is preserved
+  // (the lovable wrapper otherwise forces everything into dist/).
   nitro: {
     preset: "netlify",
+    output: {
+      dir: ".netlify/functions-internal",
+      serverDir: ".netlify/functions-internal/server",
+      publicDir: "dist",
+    },
   },
 });
