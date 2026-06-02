@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Cellarbridge — C7 × Vinosmith" },
+      { title: "Cellarbridge - C7 × Vinosmith" },
       { name: "description", content: "Prototype: Commerce7 to Vinosmith inventory sync with depletions and forecasting." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Cellarbridge - C7 × Vinosmith" },
+      { property: "og:description", content: "Prototype: Commerce7 to Vinosmith inventory sync with depletions and forecasting." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Cellarbridge - C7 × Vinosmith" },
+      { name: "twitter:description", content: "Prototype: Commerce7 to Vinosmith inventory sync with depletions and forecasting." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9bf43996-676b-4227-b7df-b41c2fa35a66/id-preview-855ca997--9d81bb74-2140-4a66-97f0-0bfb18f98449.lovable.app-1780431521194.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9bf43996-676b-4227-b7df-b41c2fa35a66/id-preview-855ca997--9d81bb74-2140-4a66-97f0-0bfb18f98449.lovable.app-1780431521194.png" },
     ],
     links: [
       {
