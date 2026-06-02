@@ -100,8 +100,10 @@ function Index() {
             <InventoryTable inventory={inventory} pulse={pulse} />
             <DepletionsChart />
           </div>
-          <div className="lg:col-span-1">
-            <OrderFeed orders={orders} />
+          <div className="lg:col-span-1 lg:relative">
+            <div className="lg:absolute lg:inset-0">
+              <OrderFeed orders={orders} />
+            </div>
           </div>
         </div>
 
