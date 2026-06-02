@@ -12,7 +12,7 @@ const typeColor: Record<string, string> = {
 export function OrderFeed({ orders }: { orders: OrderEvent[] }) {
   const skuMap = Object.fromEntries(SKUS.map((s) => [s.id, s]));
   return (
-    <div className="rounded-xl border bg-card overflow-hidden flex flex-col h-full">
+    <div className="surface overflow-hidden flex flex-col h-full">
       <div className="px-5 py-4 border-b">
         <h3 className="font-display text-lg">Live Order Stream</h3>
         <p className="text-xs text-muted-foreground mt-0.5">Inbound from Commerce7 → routed to Vinosmith</p>
@@ -43,7 +43,7 @@ export function OrderFeed({ orders }: { orders: OrderEvent[] }) {
                   </div>
                 </div>
               </div>
-              <span className="text-[10px] text-muted-foreground tabular-nums shrink-0">
+              <span className="text-[10px] text-muted-foreground tabular-nums shrink-0" suppressHydrationWarning>
                 {new Date(o.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
               </span>
             </div>

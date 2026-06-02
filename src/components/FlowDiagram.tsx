@@ -1,6 +1,6 @@
 export function FlowDiagram() {
   return (
-    <div className="rounded-xl border bg-card p-5">
+    <div className="surface p-5">
       <h3 className="font-display text-lg mb-1">Integration Logic</h3>
       <p className="text-xs text-muted-foreground mb-4">How every Commerce7 event maps to Vinosmith inventory moves</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
