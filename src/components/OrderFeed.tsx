@@ -1,7 +1,8 @@
+import type { ReactNode } from "react";
 import type { OrderEvent } from "@/lib/mock-data";
 import { ORDER_TYPE_LABEL, SKUS } from "@/lib/mock-data";
 
-const channelMeta: Record<string, { label: string; color: string; icon: JSX.Element }> = {
+const channelMeta: Record<string, { label: string; color: string; icon: ReactNode }> = {
   web: {
     label: "Online Order",
     color: "var(--warehouse)",
